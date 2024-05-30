@@ -105,54 +105,58 @@ li {
   transform: translate(-50%, -50%);
 }
 
-#infoPage{
-    width: 100%;
-    height: 100vh;
-    background-color:#faf8f3;
-    color: black;
+.page2{
+  height: 100vh;
+  width: 100vw;
+  background-color:#faf8f3; 
 }
-
-.elemOne h1{
-  color: black;
-  opacity: 70%;
-  padding: 40px;
-  font-weight: 100;
-}
-
-.elemOne{
+.page2 .page2-top{
+  height: 100px;
+  width: 100vw;
+  padding: .6vw 3vw;
+  margin-top: 30px;
   display: flex;
+  align-items: end;
   justify-content: space-between;
-  font-family: "rejouice";
-  font-size: 1vw;
+}
+.page2 .page2-top h3{
+  font-size: 1.7vw;
   font-weight: lighter;
-  
-  
-  
-  
+  letter-spacing: -.5px;
+  color: #141414;
 }
-
-.border{
-  border-bottom: 2px solid black;
-  margin-top:-20px ;
-  width: 95%;
-  margin-left: 40px;
-  opacity:60%;
-
+.page2 .page2-top .first-text{
+  overflow: hidden;
 }
-
-.elemTwo{
-  width:1580px;
- line-height: 1;
-  font-size: 2.2vw;
-  margin-left: 0px;
-  padding: 40px;
-  opacity: 80%;
-  
+.page2 .page2-top-border{
+  height: 1px;
+  width: 0vw;
+  margin: .6vw 3vw;
+  background-color: rgb(71, 71, 71);
 }
-
-.elemTwo h1{
+.page2 .page2-bottom{
+  height: 415px;
+  width: 100vw;
+  overflow: hidden;
+}
+.page2 .page2-bottom .btm-text{
+  padding: 2vw 3vw;
+  overflow: hidden;
+}
+.page2 .page2-bottom .btm-text h2 .up {
+  overflow: hidden;
+}
+.page2 .page2-bottom .btm-text h2 span{
+  font-size: 4.45vw;
   font-weight: lighter;
+  line-height: 1;
+  letter-spacing: -1px;
+  display: inline-block;
+  overflow: hidden;
 }
+
+
+
 
 #agencyWork{
   min-height: 100vh;
@@ -181,6 +185,12 @@ text-align: center;
   border-radius: 10px;
 }
 
+
+
+#top .topText h2{
+  
+  transform: translateY(90%);
+}
 
 #top h2{
   
@@ -247,6 +257,57 @@ cursor: pointer;
 
 #cards .box:hover img{
   opacity: 0;
+}
+
+
+.page4{
+  width: 100%;
+  height: 100vh;
+   background-color:#faf8f3;;
+}
+
+.page4 .page4-top{
+  height: 100px;
+  width: 100vw;
+  padding: .6vw 3vw;
+  
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.page4 .page4-top h3{
+  font-size: 1.7vw;
+  font-weight: lighter;
+  letter-spacing: -.5px;
+  color: #141414;
+}
+.page4 .page4-top .first-text{
+  overflow: hidden;
+}
+.page4 .page4-top-border{
+  height: 1px;
+  width: 96%;
+  margin: .6vw 3vw;
+  background-color: rgb(71, 71, 71);
+}
+.page4 .page4-bottom{
+  
+  overflow: hidden;
+}
+.page4 .page4-bottom .btm-text{
+  padding: 2vw 3vw;
+  overflow: hidden;
+}
+.page4 .page4-bottom .btm-text h2 .up {
+  overflow: hidden;
+}
+.page4 .page4-bottom .btm-text h2 span{
+  font-size: 4vw;
+  font-weight: lighter;
+  line-height: 1;
+  
+  
+  overflow: hidden;
 }
 
 
