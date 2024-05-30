@@ -14,7 +14,7 @@ body,
 html {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  
 }
 
 .loader{
@@ -263,7 +263,7 @@ cursor: pointer;
 .page4{
   width: 100%;
   height: 100vh;
-   background-color:#faf8f3;;
+   background-color:#faf8f3;
 }
 
 .page4 .page4-top{
@@ -310,5 +310,108 @@ cursor: pointer;
   overflow: hidden;
 }
 
+#page5{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
 
+#page5 video{
+  height: 100%;
+}
+
+#page5 svg{
+  position: absolute;
+  height: 65%;
+}
+
+.page8{
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+.page8 .text{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0vw 3vw;
+}
+.page8 .text h1{
+  font-size: 8.5vw;
+  font-family: rejo;
+  font-weight: 500;
+}
+.page8 .text h3{
+  font-size: 1.8vw;
+  font-weight: lighter;
+  position: relative;
+  cursor: pointer;
+}
+.page8 .text h3::after{
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform .35s ease-out;
+}
+.page8 .text h3:hover::after{
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+.page8 .text h3 i{
+  font-size: 1.9vw;
+  margin-right: 10px;
+}
+.page8 .page8-top-border{
+  height: 1px;
+  width: 94vw;
+  margin: .6vw 3vw;
+  background-color: rgb(71, 71, 71);
+}
+
+
+#swiperDiv{
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  margin-top: -5px;
+ 
+  
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.swiper-slide {
+ 
+  text-align: center;
+  font-size: 18px;
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 18%;
+  height: 10%;
+  
+  object-fit: cover;
+}
 
