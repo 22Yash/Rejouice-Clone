@@ -151,24 +151,48 @@ opacity:0
 
 
 
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
 
-swiper();
+
+
+function swipper(){
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
+});
+}
+
+function page5TopAnim(){
+ 
+  gsap.to(".page4-top-border", {
+    width: 94+"vw",
+    scrollTrigger:{
+      scroller:"#main",
+      trigger:".page4-top-border",
+      start:"top 85%",
+      end:"top 80%",
+      duration:5,
+      scrub:1
+    }
+  });
+  gsap.from(".page4 .page4-bottom .btm-text h2 .up span",{
+    y:200,
+    scrollTrigger:{
+      scroller:"#main",
+      trigger:".page4 .page4-bottom .btm-text h2 .up span",
+      start:"top 105%",
+      end:"top 99%",
+      scrub:2,
+      stagger:.1,
+    }
+})
+}
+page5TopAnim();
+swipper();
 loco();
 page2TopAnim();
 
