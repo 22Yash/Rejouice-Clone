@@ -133,7 +133,7 @@ function page2TopAnim() {
       end: "top 98%",
       scrub: 2,
       stagger: 0.1,
-      markers: true,
+     
     },
   });
 
@@ -153,7 +153,7 @@ function page2TopAnim() {
         end: "top 98%",
         scrub: 2,
         stagger: 0.1,
-        markers: true,
+        
       },
     }
   );
